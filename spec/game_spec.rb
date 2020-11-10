@@ -11,6 +11,10 @@ describe Game do
     it '#roll_dice responds to class Game' do
       expect(subject).to respond_to(:roll_dice)
     end
+
+    it '#movement responds to class Games' do
+      expect(subject).to respond_to(:movement)
+    end
   end
   context 'method' do
     it '#roll_dice will return an integer' do
