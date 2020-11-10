@@ -10,3 +10,4 @@ Gemfile.lock
 
 # Local cache of Rubocop remote config
 .rubocop-*
+goals_doc.docx
