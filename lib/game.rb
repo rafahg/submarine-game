@@ -1,9 +1,10 @@
 class Game
 
-  attr_reader :path
+  attr_reader :path, :player_position
 
   def initialize
-    @path = (1..10).to_a
+    @path = (0..10).to_a
+    @player_position = 0
   end
 
   def game  # It will control the game loop
@@ -14,9 +15,15 @@ class Game
   end
 
   def movement
+    place = roll_dice
+    @player_position += place
+    @path[player_position] = "player"
   end
   
 
 end
 
-p a = Game.new
+a = Game.new
+a.movement
+p a.path
+p a.player_position
