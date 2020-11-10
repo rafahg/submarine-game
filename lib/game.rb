@@ -4,7 +4,7 @@ class Game
   end
 
   def roll_dice # roll the dice to determine the player position.
-    1
+    rand(1..6)
   end
 
 end
